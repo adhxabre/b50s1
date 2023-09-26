@@ -1,37 +1,96 @@
 <html>
     <head>
         <title>Personal Web</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <div style="
-            width: 350px;
-            border: 1px solid black; 
-            margin: 90px auto; 
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px #cecece; 
-        ">
-          <img src="./image/IMG_9387.JPG" style="width: 100%; border-radius: 10px;" alt="freddy_sombrero" />
-          <h1>Freddy Sombrero</h1>
-          <p>I am the strongest person in Indonesia, even government afraid of me.</p>
+        <nav>
+          <div class="nav-left">
+              <ul>
+                  <li>
+                      <img src="image/logo.png" alt="logo" />
+                  </li>
+                  <li>
+                      <a class="active" href="index.html">Home</a>
+                  </li>
+                  <li>
+                      <a href="#">Blog</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="nav-right">
+              <a href="contact.html">Contact</a>
+          </div>
+        </nav>
 
-          <table style="
-            border: 3px double black;
-            width: 100%;
-            text-align: center;
-            border-collapse: collapse;
-            margin-bottom: 10px;
-          ">
-            <tr style="border: 1px solid black;">
-                <th style="border: 1px solid black;">Experience</th>
-                <th style="border: 1px solid black;">Year</th>
-            </tr>
-            <tr style="border: 1px solid black;">
-                <td style="border: 1px solid black;">Police Officer</td>
-                <td style="border: 1px solid black;">2016</td>
-            </tr>
-          </table>
+        <div class="container">
+          <section>
+            <div class="left">
+              <div style="
+                width: 350px;
+                border: 1px solid black;  
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 0 0 15px #cecece; 
+              ">
+                <img src="./image/IMG_9387.JPG" style="width: 100%; border-radius: 10px 10px 0 0;" alt="freddy_sombrero" />
+                <h1>Freddy Sombrero</h1>
+                <p>I am the strongest person in Indonesia, even government afraid of me.</p>
+                <div style="margin-top: 5px;">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-youtube"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <table style="
+                  border: 1px solid grey;
+                  width: 100%;
+                  text-align: center;
+                  border-collapse: collapse;
+                  margin-bottom: 10px;
+                  margin-top: 20px;
+                " cellpadding="5px">
+                  <tr style="background-color: grey; color: white;">
+                      <th>Experience</th>
+                      <th>Year</th>
+                  </tr>
+                  <tr>
+                      <td>Police Officer</td>
+                      <td>2016</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="right">
+              <h2>What I do?</h2>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
+              <div class="skill">
+                <div>
+                  <img src="image/logo.png" alt="logo" />
+                  <h2>Javascript</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae accusamus labore ratione odit dolor molestias similique repellendus amet eveniet.</p>
+                </div>
+                <div>
+                  <img src="image/logo.png" alt="logo" />
+                  <h2>Github</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae accusamus labore ratione odit dolor molestias similique repellendus amet eveniet.</p>
+                </div>
+                <div>
+                  <img src="image/logo.png" alt="logo" />
+                  <h2>Deployment</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae accusamus labore ratione odit dolor molestias similique repellendus amet eveniet.</p>
+                </div>
+              </div>
+
+              <div class="social-media">
+                <h2>Found me on</h2>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+          </section>
         </div>
     </body>
 </html>

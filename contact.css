@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav { /* flex container */
+    background-color: #ebeaea;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+nav ul li .active {
+    color: orangered;
+}
+
+.nav-left { /* flex item */
+    flex: 50%; /* mengatur lebarnya */
+    /* background-color: red; */
+}
+
+.nav-right { /* flex item */
+    flex: 50%;
+    text-align: end;
+    margin-right: 25px;
+    /* background-color: blue; */
+}
+
+.nav-right a {
+    background-color: orangered;
+    padding: 8px 25px;
+    color: white;
+    border-radius: 5px;
+}
+
+form {
+    width: 350px;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+form div {
+    margin-top: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    background-color: #dfdede;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    resize: none;
+}
+
+button {
+    background-color: orangered;
+    color: white;
+    padding: 6px 25px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}

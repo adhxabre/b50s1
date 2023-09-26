@@ -34,8 +34,51 @@ git commit -m "pesan kalian" #untuk memberikan pesan ketika kita melakukan commi
 git push nama_remote main #melakukan push terhadap project ke dalam repository kita
 ```
 
+# Tingkatan Styling
+
+Inline Styling > id > class > element
+
+styling menggunakan id akan berbentuk seperti ini:
+
+```css
+#div {
+    background-color: #000;
+}
+```
+
+styling menggunakan class akan berbentuk seperti ini:
+
+```css
+.div {
+    background-color: #000;
+}
+```
+
+styling menggunakan element akan berbentuk seperti ini:
+
+```css
+div {
+    background-color: #000;
+}
+```
+
+align-items mengatur bagian dari vertical
+justify-content mengatur bagian dari horizontal
+
+================================================================
+
+References CDN:
+
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+```
+
 References Link:
 
 [CSS Units](https://www.w3schools.com/css/css_units.asp)
 
 [CSS Table Border](https://www.w3schools.com/html/html_table_borders.asp)
+
+[Flexbox Cheatsheet](https://yoksel.github.io/flex-cheatsheet/)
+
+[align-center vs align-items](https://stackoverflow.com/questions/27539262/whats-the-difference-between-align-content-and-align-items)
