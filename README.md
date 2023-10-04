@@ -4,16 +4,28 @@ Div memungkinkan kita untuk mengelompokkan beberapa elemen sebagai satu kesatuan
 Fungsi utama: mengelompokkan, menjadi container (kalian punya mie, dimasukkin ke dalem tupperware)
 
 # -- Sizing:
+
 Width mengatur lebar dari suatu elemen, Height mengatur tinggi dari suatu elemen
 
 Sizing bisa menggunakan pixel, point, pica, cm, mm, inches
 
 # -- Penjarakan
+
 Jarak bisa diberikan menggunakan margin dan padding
 
 margin memberikan jarak luar, sehingga dia memiliki jarak antar elemen dengan elemen lainnya
 
 padding memberikan jarak dalam, sehingga dia memiliki jarak antar border dengan elemen di dalamnya
+
+# -- Condition
+
+== berarti valuenya sama dengan
+
+exp `if (5 == "5") return;` akan menjadi true, karena valuenya sama
+
+=== berarti valuenya sama dengan dan memiliki tipe data yang sama dengan
+
+exp `if (5 === "5") return;` akan menjadi false, karena valuenya sama tetapi tipe datanya berbeda (number / string)
 
 # Git Push (Step By Step)
 
@@ -42,7 +54,7 @@ styling menggunakan id akan berbentuk seperti ini:
 
 ```css
 #div {
-    background-color: #000;
+  background-color: #000;
 }
 ```
 
@@ -50,7 +62,7 @@ styling menggunakan class akan berbentuk seperti ini:
 
 ```css
 .div {
-    background-color: #000;
+  background-color: #000;
 }
 ```
 
@@ -58,7 +70,7 @@ styling menggunakan element akan berbentuk seperti ini:
 
 ```css
 div {
-    background-color: #000;
+  background-color: #000;
 }
 ```
 
@@ -70,7 +82,13 @@ justify-content mengatur bagian dari horizontal
 References CDN:
 
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
 ```
 
 References Link:
