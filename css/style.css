@@ -1,85 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    color: black;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-nav { /* flex container */
-    background-color: #ebeaea;
-    display: flex;
-    align-items: center;
-    height: 10vh;
-    width: 100vw;
+nav {
+  /* flex container */
+  background-color: #ebeaea;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
 }
 
 nav ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
 }
 
 nav ul li {
-    margin-right: 25px;
-    font-size: 20px;
+  margin-right: 25px;
+  font-size: 20px;
 }
 
 nav ul li .active {
-    color: orangered;
+  color: orangered;
 }
 
-.nav-left { /* flex item */
-    flex: 50%; /* mengatur lebarnya */
-    /* background-color: red; */
+.nav-left {
+  /* flex item */
+  flex: 50%; /* mengatur lebarnya */
+  /* background-color: red; */
 }
 
-.nav-right { /* flex item */
-    flex: 50%;
-    text-align: end;
-    margin-right: 25px;
-    /* background-color: blue; */
+.nav-right {
+  /* flex item */
+  flex: 50%;
+  text-align: end;
+  margin-right: 25px;
+  /* background-color: blue; */
 }
 
 .nav-right a {
-    background-color: orangered;
-    padding: 8px 25px;
-    color: white;
-    border-radius: 5px;
+  background-color: orangered;
+  padding: 8px 25px;
+  color: white;
+  border-radius: 5px;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    height: 90vh;
-    align-items: center;
+  display: flex;
+  margin: 50px 0;
+  justify-content: center;
+  align-items: center;
 }
 
 section {
-    display:flex;
-    width: 80%;
+  display: flex;
+  width: 80%;
 }
 
 .left {
-    flex: 30%;
+  flex: 30%;
 }
 
 .right {
-    flex: 70%;
-    margin-left: 50px;
+  flex: 70%;
+  margin-left: 50px;
 }
 
 .skill {
-    display: flex;
-    margin-top: 30px;
+  display: flex;
+  margin-top: 30px;
 }
 
 .social-media i {
-    margin-right: 20px;
-    font-size: 30px;
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+#barsmenu {
+  display: none;
+}
+
+.hamburger-nav-container {
+  font-size: 23px;
+  list-style-type: none;
+  display: none;
+}
+
+.hamburger-nav-container a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #9a9a9a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+.hamburger-nav-container .hamburger-active {
+  text-decoration: none;
+  color: #fff;
+  background-color: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+@media only screen and (max-width: 900px) {
+  .card-container {
+    width: 100%;
+  }
+
+  .left {
+    flex: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .right {
+    margin-left: 0px;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .skill {
+    flex-direction: column;
+  }
+
+  .item-collapse {
+    display: none;
+  }
+
+  #barsmenu {
+    display: block;
+  }
 }
